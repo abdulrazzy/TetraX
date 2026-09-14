@@ -7,12 +7,10 @@ End-to-end test automation for [Tetra Dx](https://tetradxmvp.web.app/), a labora
 - [Playwright Test](https://playwright.dev/) — browser automation
 - TypeScript — type-safe page objects and fixtures
 - Page Object Model (POM) — maintainable UI abstractions
-- [@playwright/mcp](https://playwright.dev/docs/getting-started-mcp) — AI-assisted browser exploration in Cursor
 
 ## Project Structure
 
 ```
-├── .cursor/mcp.json          # Playwright MCP server config for Cursor
 ├── playwright.config.ts      # Test runner configuration
 ├── src/
 │   ├── config/               # Environment URLs and route constants
@@ -79,29 +77,6 @@ npm test
 
 ```bash
 npm run report
-```
-
-## Playwright MCP (Cursor)
-
-The project includes `.cursor/mcp.json` with the official [Playwright MCP server](https://playwright.dev/docs/getting-started-mcp).
-
-**To enable:**
-
-1. Restart Cursor (or reload MCP servers in Settings → MCP)
-2. Confirm **playwright** shows a green status indicator
-3. Ask Cursor to explore pages or generate tests using Playwright MCP tools
-
-Config:
-
-```json
-{
-  "mcpServers": {
-    "playwright": {
-      "command": "npx",
-      "args": ["-y", "@playwright/mcp@latest"]
-    }
-  }
-}
 ```
 
 ## Application Under Test
