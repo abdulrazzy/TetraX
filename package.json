@@ -1,0 +1,26 @@
+{
+  "name": "tetra-dx-automation",
+  "version": "1.0.0",
+  "description": "Playwright E2E automation framework for Tetra Dx",
+  "scripts": {
+    "test": "playwright test",
+    "test:auth": "playwright test --project=chromium tests/auth",
+    "test:auth:headed": "playwright test --project=chromium --headed tests/auth",
+    "test:lab": "playwright test --project=chromium-authenticated tests/authenticated",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "test:setup": "playwright test --project=setup",
+    "report": "playwright show-report",
+    "mcp": "npx @playwright/mcp@latest"
+  },
+  "keywords": ["playwright", "e2e", "tetra-dx", "automation"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/mcp": "^0.0.77",
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^26.1.0",
+    "dotenv": "^17.4.2",
+    "typescript": "^6.0.3"
+  }
+}

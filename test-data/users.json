@@ -1,0 +1,13 @@
+{
+  "lab": {
+    "email": "abdul-rahman.huda23@yopmail.com",
+    "password": "REPLACE_WITH_VALID_PASSWORD",
+    "phone": "0599668783",
+    "role": "Laboratory Admin",
+    "persona": "lab"
+  },
+  "invalid": {
+    "email": "not-an-email",
+    "password": "short"
+  }
+}

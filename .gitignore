@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.cursor/
+.env
+.env.local
+playwright-report/
+test-results/
+playwright/.auth/
+!playwright/.auth/.gitkeep
+playwright/.auth/lab-session.json
+playwright/.auth/user.json
+blob-report/
+bug-report.json
+scripts/bug-hunt.ts
+*.log
+.DS_Store
+Thumbs.db
